@@ -1,0 +1,36 @@
+# 1. 確保你使用 Butterfly 主題
+# 2. 確保你的網站是 https
+# 3. 修改 source/_data/link.yml
+# 4. 按要求新增內容
+#     - name: 博客名
+#       link: 博客地址
+#       avatar: 博客頭像
+#       descr: 博客描述
+# 5. 發起 Pull requests ，合併到 butterfly.js.org 倉庫
+
+- class_name: '<i class="fas fa-check-double" style="color: #FF6666;padding-right: 0.4rem"></i>网站'
+  class_desc: '<span style="font-style: italic;">值得一看的网站</span>'
+  link_list:
+    - name: Last Week in Kubernetes Development
+      link: https://lwkd.info/
+      avatar: https://lwkd.info/images/logo.png
+      descr: Stay up-to-date on Kubernetes development in 15 minutes a week.
+
+- class_name: '<i class="fas fa-fan" style="color:#00cccc;padding-right: 0.4rem"></i>朋友'
+  class_desc: '<span style="font-style: italic;">星空下最闪耀的存在是谁？是你！</span>'
+  link_list:
+    - name: 更多示例
+      link: https://github.com/jerryc127/hexo-theme-butterfly/issues/76
+      avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/more-butterfly-demo-avatar.png
+      descr: 更多使用 Butterfly 的網站
+
+- class_name: '<i class="fa-solid fa-handshake" style="color: #f075aa;padding-right: 0.4rem"></i>诚邀互链'
+  class_desc: 你可以通过右侧个人卡片中的任何一种联系方式联系到我
+  link_list:
+    - name: Carlory
+      link: //carlory.github.io
+      avatar: //carlory.github.io/img/avatar.jpg
+      descr: 不积跬步，无以至千里
+
+
+      
