@@ -178,9 +178,7 @@ DRA 相关的 API 定义在 v1alpha3 对 API 进行了彻底的改造。因此�
 - [KEP-4680 将资源运行状况状态添加到设备插件和 DRA 的 Pod 状态](https://kep.k8s.io/4680)
 - [KEP-4368 支持 Job 的 ManagedBy 字段](https://kep.k8s.io/4368)
 
-
-
-## 附录
+## 致谢
 
 1. [Kubernetes 1.31 官方 - 发布团队](https://github.com/kubernetes/sig-release/blob/master/releases/release-1.31)
 1. [Kubernetes 1.31 官方 - 增强跟踪](https://bit.ly/k8s131-enhancements)
