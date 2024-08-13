@@ -166,17 +166,17 @@ DRA 相关的 API 定义在 v1alpha3 对 API 进行了彻底的改造。因此�
 
 ## 🚀 手动尝鲜 (Alpha)
 
-- [KEP-2340 监视缓存提供一致的数据视图, 提高 Kubernetes 对于 Get 和 List 请求的可扩展性和性能](https://kep.k8s.io/2340) 尝试升至 Beta 后, 因性能问题被回退至 Alpha 阶段
-- [KEP-4601 授权属性将扩展为包括列表、监视和删除集合中的字段选择器和标签选择器。这将允许授权者在做出授权决定时使用这些选择器](https://kep.k8s.io/4601)
-- [KEP-4633 仅允许对配置的端点进行匿名身份验证](https://kep.k8s.io/4633)
-- [KEP-3063 使用控制平面控制器进行动态资源分配 (DRA)](https://kep.k8s.io/3063)
-- [KEP-4176 一种新的静态策略，优先分配同一插槽上不同 CPU 的核心](https://kep.k8s.io/4176)
-- [KEP-4381 借助结构化参数，kube-scheduler 和 Cluster Autoscaler 可以自行处理和模拟声明分配，而无需依赖第三方驱动程序](https://kep.k8s.io/4381)
-- [KEP-4639 新增基于 OCI 镜像的只读卷](https://kep.k8s.io/4639)
-- [KEP-3619 细粒度的补充组控制](https://kep.k8s.io/3619)
-- [KEP-4192 移动存储版本迁移器到主库](https://kep.k8s.io/4192)
-- [KEP-4680 将资源运行状况状态添加到设备插件和 DRA 的 Pod 状态](https://kep.k8s.io/4680)
-- [KEP-4368 支持 Job 的 ManagedBy 字段](https://kep.k8s.io/4368)
+- [KEP-2340](https://kep.k8s.io/2340) 监视缓存提供一致的数据视图, 提高 Kubernetes 对于 Get 和 List 请求的可扩展性和性能. 尝试升至 Beta 后, 因性能问题被回退至 Alpha 阶段
+- [KEP-4601](https://kep.k8s.io/4601) 授权属性将扩展为包括列表、监视和删除集合中的字段选择器和标签选择器。这将允许授权者在做出授权决定时使用这些选择器
+- [KEP-4633](https://kep.k8s.io/4633) 仅允许对配置的端点进行匿名身份验证
+- [KEP-3063](https://kep.k8s.io/3063) 使用控制平面控制器进行动态资源分配 (DRA)
+- [KEP-4176](https://kep.k8s.io/4176) 一种新的静态策略，优先分配同一插槽上不同 CPU 的核心
+- [KEP-4381](https://kep.k8s.io/4381) 借助结构化参数，kube-scheduler 和 Cluster Autoscaler 可以自行处理和模拟声明分配，而无需依赖第三方驱动程序
+- [KEP-4639](https://kep.k8s.io/4639) 新增基于 OCI 镜像的只读卷
+- [KEP-3619](https://kep.k8s.io/3619) 细粒度的补充组控制
+- [KEP-4192](https://kep.k8s.io/4192) 移动存储版本迁移器到主库
+- [KEP-4680](https://kep.k8s.io/4680) 将资源运行状况状态添加到设备插件和 DRA 的 Pod 状态
+- [KEP-4368](https://kep.k8s.io/4368) 支持 Job 的 ManagedBy 字段
 
 ## 致谢
 
