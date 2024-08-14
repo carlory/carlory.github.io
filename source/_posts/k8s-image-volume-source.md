@@ -44,12 +44,12 @@ nodes:
 featureGates: {"ImageVolume":true}
 ```
 
-创建 `kind` 集群，版本为 `v1.31.0-rc.1`，并且使用 `CRI-O` 作为容器运行时。
+创建 `kind` 集群，版本为 `v1.31.0`，并且使用 `CRI-O` 作为容器运行时。
 
 ```shell
-➜  kind create cluster --image ghcr.io/carlory/kindnode-crio:v1.31.0-rc.1  --config kind-crio.yaml --name crio
+➜  kind create cluster --image ghcr.io/carlory/kindnode-crio:v1.31.0  --config kind-crio.yaml --name crio
 Creating cluster "crio" ...
- ✓ Ensuring node image (ghcr.io/carlory/kindnode-crio:v1.31.0-rc.1) 🖼
+ ✓ Ensuring node image (ghcr.io/carlory/kindnode-crio:v1.31.0) 🖼
  ✓ Preparing nodes 📦 📦
  ✓ Writing configuration 📜
  ✓ Starting control-plane 🕹️
@@ -65,8 +65,8 @@ Not sure what to do next? 😅  Check out https://kind.sigs.k8s.io/docs/user/qui
 
 ➜  kubectl -n kube-system get nodes,pods
 NAME                      STATUS   ROLES           AGE     VERSION
-node/crio-control-plane   Ready    control-plane   3m50s   v1.31.0-rc.1
-node/crio-worker          Ready    <none>          3m40s   v1.31.0-rc.1
+node/crio-control-plane   Ready    control-plane   3m50s   v1.31.0
+node/crio-worker          Ready    <none>          3m40s   v1.31.0
 
 NAME                                             READY   STATUS    RESTARTS   AGE
 pod/coredns-6f6b679f8f-4vjr9                     1/1     Running   0          3m42s
@@ -178,10 +178,10 @@ docker buildx build  --load --progress=auto -t gcr.io/k8s-staging-kind/base:v202
 ... skipped ...
 
 # 构建节点镜像, 基础镜像来自上一步构建的镜像
-➜  K8S_VERSION=v1.31.0-rc.1 # or v1.31.0 
+➜  K8S_VERSION=v1.31.0
 ➜  git clone https://github.com/kubernetes/kubernetes.git && cd kubernetes
 ➜  kubernetes git:(main) git checkout $K8S_VERSION
-➜  kubernetes git:(v1.31.0-rc.1) kind build node-image --base-image gcr.io/k8s-staging-kind/base:v20240813-00d659bd
+➜  kubernetes git:(v1.31.0) kind build node-image --base-image gcr.io/k8s-staging-kind/base:v20240813-00d659bd
 ... skipped ...
 Image "kindest/node:latest" build completed.
 

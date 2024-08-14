@@ -99,9 +99,9 @@ DRA 相关的 API 定义在 v1alpha3 对 API 进行了彻底的改造。因此�
 
 ### 弃用 (Deprecation)
 
-- [KEP-4569 对 cgroup v1 的支持移至维护模式, 弃用路径与当初的 Dockershim 基本相似](https://kep.k8s.io/4569)
-- [KEP-4004 弃用 v1.Node 的 `status.nodeInfo.kubeProxyVersion` 字段](https://kep.k8s.io/4004)
-- [GODEBUG 和对 SHA-1 证书的支持将 在 2025 年上半年发布的 go 1.24 版本中完全消失, 如果你依赖 SHA-1 证书，请开始放弃使用它们](https://github.com/kubernetes/kubernetes/issues/125689)
+- [KEP-4569](https://kep.k8s.io/4569) 对 cgroup v1 的支持移至维护模式, 弃用路径与当初的 Dockershim 基本相似
+- [KEP-4004](https://kep.k8s.io/4004) 弃用 v1.Node 的 `status.nodeInfo.kubeProxyVersion` 字段
+- [Issue #125689](https://github.com/kubernetes/kubernetes/issues/125689) GODEBUG 和对 SHA-1 证书的支持将 在 2025 年上半年发布的 go 1.24 版本中完全消失, 如果你依赖 SHA-1 证书，请开始放弃使用它们
 - kube-scheduler 中非 CSI 卷限制插件的弃用 (AzureDiskLimits、CinderLimits、EBSLimits 及 GCEPDLimits), 如果已在调度器配置中显式使用已弃用的插件, 请用 NodeVolumeLimits 插件替换它们
 
 ### 移除 (Removal)
