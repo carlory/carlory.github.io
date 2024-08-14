@@ -5,8 +5,10 @@ date: 2024-08-12  15:33:25
 tags:
   - OCI
   - Volume
+  - sig-node
+  - sig-storage
   - Kubernetes
-categories: 'Kubernetes 使用指南'
+categories: 'Kubernetes 萌新指南'
 keywords: 'kubernetes,oc,image,volume,教程'
 description: 
 top_img:
@@ -139,54 +141,3 @@ total 4
 ## 致谢
 
 1. [KEP-4639: Use OCI Artifact As VolumeSource](https://kep.k8s.io/4639)
-1. [Use CRI-O Container Runtime with KIND](https://rkiselenko.dev/blog/crio-in-kind/)
-
----
-
-## 扩展阅读
-
-`kind` 默认使用 `Containerd` 作为容器运行时，但是，可以通过 `CRI-O` 切换它。
-
-**Dockerfile**
-```
-FROM kindest/node:latest
-
-ARG CRIO_VERSION
-ARG PROJECT_PATH=prerelease:/$CRIO_VERSION
-
-RUN echo "Installing Packages ..." \
-    && apt-get clean \
-    && apt-get update -y \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-    software-properties-common vim gnupg \
-    && echo "Installing cri-o ..." \
-    && curl -fsSL https://pkgs.k8s.io/addons:/cri-o:/$PROJECT_PATH/deb/Release.key | gpg --dearmor -o /etc/apt/keyrings/cri-o-apt-keyring.gpg \
-    && echo "deb [signed-by=/etc/apt/keyrings/cri-o-apt-keyring.gpg] https://pkgs.k8s.io/addons:/cri-o:/$PROJECT_PATH/deb/ /" | tee /etc/apt/sources.list.d/cri-o.list \
-    && apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get --option=Dpkg::Options::=--force-confdef install -y cri-o \
-    && sed -i 's/containerd/crio/g' /etc/crictl.yaml \
-    && systemctl disable containerd \
-    && systemctl enable crio
-```
-
-```shell
-# 构建基础镜像
-➜  git clone https://github.com/kubernetes-sigs/kind.git && cd kind/images/base
-➜  base git:(main) make quick
-./../../hack/build/init-buildx.sh
-docker buildx build  --load --progress=auto -t gcr.io/k8s-staging-kind/base:v20240813-00d659bd --pull --build-arg GO_VERSION=1.22.4  . # 构建出的镜像名称: gcr.io/k8s-staging-kind/base:v20240813-00d659bd
-... skipped ...
-
-# 构建节点镜像, 基础镜像来自上一步构建的镜像
-➜  K8S_VERSION=v1.31.0
-➜  git clone https://github.com/kubernetes/kubernetes.git && cd kubernetes
-➜  kubernetes git:(main) git checkout $K8S_VERSION
-➜  kubernetes git:(v1.31.0) kind build node-image --base-image gcr.io/k8s-staging-kind/base:v20240813-00d659bd
-... skipped ...
-Image "kindest/node:latest" build completed.
-
-# 根据 Dockerfile, 构建 CRI-O 节点镜像
-➜  CRIO_VERSION=main # or v1.31
-➜  docker build --build-arg CRIO_VERSION=$CRIO_VERSION -t ghcr.io/carlory/kindnode-crio:$K8S_VERSION .
-➜  docker push ghcr.io/carlory/kindnode-crio:$K8S_VERSION
-```

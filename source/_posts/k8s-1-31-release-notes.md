@@ -3,6 +3,7 @@ title: Kubernetes 1.31 发布日志
 comments: false
 date: 2024-08-13  14:33:25
 tags:
+  - sig-release
   - Kubernetes
 categories: Kubernetes 发布日志
 keywords: 'kubernetes,发布日志,changelog,released,主題,doc,教程'

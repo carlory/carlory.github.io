@@ -19,6 +19,14 @@
 - class_name: '<i class="fas fa-fan" style="color:#00cccc;padding-right: 0.4rem"></i>朋友'
   class_desc: '<span style="font-style: italic;">星空下最闪耀的存在是谁？是你！</span>'
   link_list:
+    - name: Hemant Rawat
+      link: https://hemantra.medium.com/
+      avatar: https://miro.medium.com/v2/resize:fill:176:176/1*FjtkSqc_DIIPK8dHXewc2Q.png
+      descr: Product Management & Solutions Engineering.
+    - name: Charles Vissol
+      link: https://medium.com/@charles.vissol
+      avatar: https://miro.medium.com/v2/resize:fill:176:176/1*hFiit9qS6KdMhns4A9WWjw.jpeg
+      descr: Expert in a Space company & No Spring Chicken Geek
     - name: 更多示例
       link: https://github.com/jerryc127/hexo-theme-butterfly/issues/76
       avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/more-butterfly-demo-avatar.png
