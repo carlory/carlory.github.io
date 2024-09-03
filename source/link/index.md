@@ -1,8 +1,8 @@
 ---
-title: 友情链接
+title: 一起探索云原生世界
 date: 2024-08-10 16:26:30
 type: "link"
-top_img: ./img/friends.jpg
+top_img: https://contribcard.clotributor.dev/images/phippy-family.png #./img/friends.jpg
 ---
 
 <!-- <br>
