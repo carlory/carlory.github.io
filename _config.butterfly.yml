@@ -62,7 +62,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /img/avatar.jpg # https://s2.loli.net/2024/08/06/dyqOS3x1YmkQjXo.jpg
+  img: https://avatars.githubusercontent.com/u/28390961?v=4 # /img/avatar.jpg
   effect: false
 
 # Disable all banner image

@@ -15,8 +15,12 @@
       link: https://lwkd.info/
       avatar: https://lwkd.info/images/logo.png
       descr: Stay up-to-date on Kubernetes development in 15 minutes a week.
+    - name: RawChat 公益站点
+      link: https://sharedchat.cn/
+      avatar: https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/512px-ChatGPT_logo.svg.png
+      descr: 包含一些免费的共享ChatGPT账号
 
-- class_name: '<i class="fas fa-fan" style="color:#00cccc;padding-right: 0.4rem"></i>朋友'
+- class_name: '<i class="fas fa-fan" style="color:#00cccc;padding-right: 0.4rem"></i>关注'
   class_desc: '<span style="font-style: italic;">星空下最闪耀的存在是谁？是你！</span>'
   link_list:
     - name: Hemant Rawat
@@ -27,17 +31,29 @@
       link: https://medium.com/@charles.vissol
       avatar: https://miro.medium.com/v2/resize:fill:176:176/1*hFiit9qS6KdMhns4A9WWjw.jpeg
       descr: Expert in a Space company & No Spring Chicken Geek
+    - name: Sebastian Raschka, PhD 
+      link: https://substack.com/@rasbt
+      avatar: https://substackcdn.com/image/fetch/w_176,h_176,c_fill,f_webp,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F61f4c017-506f-4e9b-a24f-76340dad0309_800x800.jpeg
+      descr: Sebastian is a machine learning and AI researcher with over a decade of experience in the field. He is very passionate about explaining complex technical concepts and "taking the magic out of AI.
+    - name: 苏洋博客
+      link: https://soulteary.com/
+      avatar: https://avatars.githubusercontent.com/u/1500781?v=4
+      descr: Milvus 开源布道师、北京人工智能研究院社区研发和 IT 技术总监、美团技术布道师、X 金融前端架构师、阿里云、美团、淘宝和新浪云高级前端开发工程师。
+    - name: Fu Wei 博客
+      link: https://fuweid.com/
+      avatar: https://avatars.githubusercontent.com/u/17510957?v=4
+      descr: containerd/moby contributor. opinions are my own
     - name: 更多示例
-      link: https://github.com/jerryc127/hexo-theme-butterfly/issues/76
+      link: https://butterfly.js.org/link/
       avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/more-butterfly-demo-avatar.png
-      descr: 更多使用 Butterfly 的網站
+      descr: 更多使用 Butterfly 的网站
 
 - class_name: '<i class="fa-solid fa-handshake" style="color: #f075aa;padding-right: 0.4rem"></i>诚邀互链'
   class_desc: 你可以通过右侧个人卡片中的任何一种联系方式联系到我
   link_list:
     - name: Carlory
       link: //carlory.github.io
-      avatar: //carlory.github.io/img/avatar.jpg
+      avatar: https://avatars.githubusercontent.com/u/28390961?v=4
       descr: 不积跬步，无以至千里
 
 
